@@ -5,7 +5,7 @@ spring:
 server: 
   port: 8201
 spring:   
-  profiles: dev #开发环境
+  profiles: dev 
   application:
     name: application
 eureka:
@@ -16,7 +16,7 @@ eureka:
 server: 
   port: 8202
 spring:   
-  profiles: test #开发环境
+  profiles: test 
   application:
     name: application
 eureka:
