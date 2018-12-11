@@ -1,13 +1,25 @@
 spring:
   profiles:
-      active: dev
----
-spring:
+    active: dev
+
+server: 
+  port: 8201
+spring:   
   profiles: dev #开发环境
   application:
-       name: microservicecloud-config-zzsxt-dev
----
-spring:
-  profiles: test #测试环境
+    name: application
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.194.130:8761/eureka/,http://192.168.194.131:8761/eureka/
+     
+server: 
+  port: 8202
+spring:   
+  profiles: test #开发环境
   application:
-      name: microservicecloud-config-zzsxt-test
+    name: application
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.194.130:8761/eureka/,http://192.168.194.131:8761/eureka/
